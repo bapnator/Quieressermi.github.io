@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel=" stylesheet" type="text/css" href="index.css" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Di que si :3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+    </style>
+    <script>
+
+        function mueveElBoton() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+
+
+        }
+    </script>
+</head>
+<body>
+    <center><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0bBvuLFzIjrHm9PPyvohIA?utm_source=generator" width="40%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></center>
+    <center><h1>Quieres ser mi Fiona Buchona?</h1></center>
+    <center> <button onclick="location.href='https://www.youtube.com/watch?v=b_LNMyVTtZ4'">Simon joto</button> </center>
+    <center><input type="button" id="btnNo" onmouseover="mueveElBoton()" value="Nel" /></center>
+</body>
+</html>
